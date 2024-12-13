@@ -1,0 +1,20 @@
+public class parcial {
+    public static void patron(char sym1, char sym2, int num) {
+        int lines = (int) (Math.pow(num, 2));
+
+        for (int r = 0; r < num; r++) {
+        
+            for (int i = 0; i < num; i++) {
+                if ((r+i) % 2 == 0) {
+                    System.out.print(sym1 + " ");
+                } else {
+                    System.out.print(sym2 + " ");
+                } 
+            }
+
+            System.out.println();
+        }
+
+    }
+
+}
