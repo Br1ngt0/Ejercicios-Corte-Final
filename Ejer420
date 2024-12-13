@@ -1,4 +1,4 @@
-  public static int[] frequency(int[] nums) {
+public static int[] frequency(int[] nums) {
         int[] frequency = new int[nums.length]; // Inicializa el arreglo de frecuencia con el mismo tamaño que nums
 
         for (int i = 0; i < nums.length; i++) {
@@ -11,3 +11,4 @@
             frequency[i] = count; // Asigna la frecuencia calculada
         }
         return frequency; // Devuelve el arreglo de frecuencias
+    }
