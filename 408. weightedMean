@@ -1,0 +1,40 @@
+//408. weightedMean
+
+    public static float weightedMean (int []nums, float [] percent) {
+        var weightedMean = 0.0f;
+
+        for (int i = 0; i < nums.length; i++) {
+            weightedMean += (double) nums [i]*percent[i];
+        }
+
+        return weightedMean;
+    }
+
+//puebra
+
+public class Ejer408 extends Terminal {
+    public static void main(String[] args) {
+        var percent = new float [] {};
+        var nums = new int [] {};
+        var size = 0;
+        var weightedMean = 0.0f;
+
+        writeLine("Enter the amount of numbers of your list: ");
+        size = Integer.parseInt(scanLine());
+
+        nums = new int [size];
+
+        percent = new float [nums.length];
+
+        for (int i = 0; i < nums.length; i++) {
+            nums [i] = Integer.parseInt(readLine("Enter a number"));
+            percent [i] = Float.parseFloat(readLine("Enter a percent: "));
+        }
+
+        weightedMean = (mathOperA.weightedMean(nums, percent));
+
+        writeLine(weightedMean);
+
+    }
+    
+}
